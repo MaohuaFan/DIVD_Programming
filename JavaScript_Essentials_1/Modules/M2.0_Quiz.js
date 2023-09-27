@@ -19,7 +19,8 @@ console.log(RoseTotalValue + LilyTotalValue + TulipTotalValue);
 
 
 
-//Question 2;
+//Question 2:
+
 const RoseUnitPrice = 8;
 const LilyUnitPrice = 10;
 const TulipUnitPrice = 2;
