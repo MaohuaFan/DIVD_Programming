@@ -1,6 +1,30 @@
-<!-- Include Svelte -->
-<script src="https://cdn.jsdelivr.net/npm/svelte@3.0.0/index.mjs"></script>
+<!-- Include the Svelte compiler from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/svelte@3.0.0/dist/svelte.js"></script>
 
-<!-- Include SvelteKit dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/svelte-routing@1.0.0/index.mjs"></script>
-<!-- Add any other SvelteKit dependencies you need here -->
+
+<!-- Include your Svelte component script -->
+<script>
+    // Your Svelte app code goes here
+    const { setContext } = Svelte;
+    const { createEventDispatcher } = Svelte;
+
+    let name = "World";
+
+    const dispatch = createEventDispatcher();
+
+    dispatch('set-name', {
+        detail: {
+            name
+        }
+    });
+</script>
+
+<!-- Create and mount the Svelte app -->
+<script>
+    const app = new App({
+        target: document.querySelector('#app'),
+        props: {
+            // Any initial props you want to pass to your Svelte component
+        },
+    });
+</script>

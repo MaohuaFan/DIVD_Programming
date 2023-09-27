@@ -1,15 +1,6 @@
 <!-- App.svelte -->
 <script>
-  let message = "Hello, SvelteKit!";
+    let name = "World";
 </script>
 
-<main>
-  <h1>{message}</h1>
-</main>
-
-<style>
-  main {
-    text-align: center;
-    padding: 1rem;
-  }
-</style>
+<h1>Hello, {name}!</h1>
