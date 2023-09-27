@@ -2,7 +2,13 @@
 // Display the message "Bingo!" when the number is greater than 90 but less than 110, 
 // otherwise display the message: "Miss". Use the if statement.
 
+let AskNumber = Number.prompt("Give me a number?", "");
 
+if(AskNumber > 90 && AskNumber < 110){
+    console.log("Bingo!");
+} else {
+    console.log("Miss");
+}
 
 // Exercise 2: Rewrite the code from the previous task, replacing if with a ternary conditional operator.
 
