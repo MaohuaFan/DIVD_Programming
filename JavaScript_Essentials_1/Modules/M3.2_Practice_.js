@@ -6,12 +6,11 @@ have a volume of 10000 (omitting units, as they are not relevant in this scenari
 For now, assume that the values provided by the user are valid numbers, 
 but if you have any ideas on how, you can try to make this script in such a way that it will be resistant to invalid values.*/
 
-let BoxWidth = Number.prompt("What is the width of the box?", "");
-let BoxHeight = Number.prompt("What is the height of the box?", "");
-let BoxLength = Number.prompt("What is the length of the box?", "");
+let BoxWidth = Number.prompt("Enter the width of the box.", "0");
+let BoxHeight = Number.prompt("Enter the height of the box.", "0");
+let BoxLength = Number.prompt("Enter the length of the box.", "0");
 
-BoxVolume = BoxWidth * BoxHeight * BoxLength;
+let BoxVolume = BoxWidth * BoxHeight * BoxLength;
 
-console.log("Box Width: "+ BoxWidth +" * Box Height: "+ BoxHeight +" * Box Length: "+ BoxLength +" = "+ BoxVolume);
+alert(`BoxVolume = Box Width * BoxHeight * BoxLength = ${BoxWidth} * ${BoxHeight} * ${BoxLength} = ${BoxVolume}`);
 
-// Need to check if prompt is a number still!!!!
